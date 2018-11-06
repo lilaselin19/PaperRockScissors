@@ -19,7 +19,7 @@ var win_loss_ratio = localStorage.getItem("win_loss_ratio");
 
 var feedback_message = document.getElementById("feedback_message");
 
-if(player_name==0){
+if(!player_name){
 	showOrNot(throw_choice,false);
 	showOrNot(enter_name,true);
 	showOrNot(feedback_message,true);
