@@ -139,6 +139,7 @@ log_out_button.addEventListener("click", function(){
 	showOrNot(feedback_message,true);
 	showOrNot(log_out_button, false);
 	showOrNot(reset_stats_button, true);
+	showOrNot(game_results,false);
 	for(var i=0;i<players.length;i++){
 		if(currentPlayer===players[i].name){
 			players[i]=p;
