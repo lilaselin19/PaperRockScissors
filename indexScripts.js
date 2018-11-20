@@ -162,7 +162,6 @@ reset_stats_button.addEventListener("click", function(){
 	showOrNot(reset_stats_button, false);
 	showOrNot(enter_name, true);
 	showOrNot(throw_choice,false);
-	showOrNot(stats,false);
 	showOrNot(game_results,false);
 });
 
