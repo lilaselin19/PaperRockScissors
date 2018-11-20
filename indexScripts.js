@@ -8,6 +8,7 @@ var v;
 
 var feedback_message = document.getElementById("feedback_message");
 var greeting_span = document.getElementById("greeting_span");
+var game_results = document.getElementById("game_results");
 
 if(!currentPlayer==true){
 	greeting_span.innerHTML="Hi";
@@ -139,7 +140,6 @@ log_out_button.addEventListener("click", function(){
 	showOrNot(feedback_message,true);
 	showOrNot(log_out_button, false);
 	showOrNot(reset_stats_button, true);
-	showOrNot(game_results,false);
 	for(var i=0;i<players.length;i++){
 		if(currentPlayer===players[i].name){
 			players[i]=p;
