@@ -163,7 +163,7 @@ reset_stats_button.addEventListener("click", function(){
 	showOrNot(enter_name, true);
 	console.log("check 1");
 	showOrNot(throw_choice,false);
-	console.log("check 1");
+	console.log("check 2");
 	showOrNot(game_results,false);
 });
 
