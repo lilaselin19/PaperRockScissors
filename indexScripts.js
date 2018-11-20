@@ -134,6 +134,7 @@ play_again_button.addEventListener("click", function(){
 
 var log_out_button=document.getElementById("log_out_button");
 log_out_button.addEventListener("click", function(){
+	console.log("check a")
 	feedback_message.innerHTML="Are you sure you want to log out?";
 	feedback_message.classList.remove("good");
 	feedback_message.classList.add("bad");
