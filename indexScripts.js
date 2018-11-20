@@ -134,7 +134,6 @@ play_again_button.addEventListener("click", function(){
 
 var log_out_button=document.getElementById("log_out_button");
 log_out_button.addEventListener("click", function(){
-	console.log("check a")
 	feedback_message.innerHTML="Are you sure you want to log out?";
 	feedback_message.classList.remove("good");
 	feedback_message.classList.add("bad");
@@ -157,17 +156,12 @@ log_out_button.addEventListener("click", function(){
 
 var reset_stats_button=document.getElementById("reset_stats_button");
 reset_stats_button.addEventListener("click", function(){
-	console.log("check 1");
 	greeting_span.innerHTML="Hi";
 	feedback_message.innerHTML="Enter a name to proceed.";
-	console.log("check 2");
 	reset();
-	console.log("check 3");
 	showOrNot(reset_stats_button, false);
 	showOrNot(enter_name, true);
-	console.log("check 4");
 	showOrNot(throw_choice,false);
-	console.log("check 5");
 	showOrNot(game_results,false);
 });
 
