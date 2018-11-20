@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>P,R,S - Stats</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="shortcut icon" type="image/png" href="Images/logo.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Bangers|Tangerine" rel="stylesheet">
+</head>
+
+<body>
+  <img id="logo" src="Images/logo.png" class="center">
+  <h1>P, R, S Stats</h1>
+
+  <div id="stats" class="visible">
+    <span class="center">
+      <h2>Stats</h2>
+      <h5>Total Games: <span class="total_games_span"></span></h5>
+      <h5>Total Wins: <span class="total_wins_span"></span></h5>
+      <h5>Win/Loss ratio: <span class="win_loss_ratio_span"></span></h5>
+      <h3 id = "player_throw_stats">Throw Statistics</h3>
+      <table class="center">
+        <tr>
+          <th>Player</th>
+          <th>Paper</th>
+          <th>Rock</th>
+          <th>Scissors</th>
+        </tr>
+        <tr>
+          <td><span class="player_name_span"></span></td>
+          <td><span class="player_paper_span"></span></td>
+          <td><span class="player_rock_span"></span></td>
+          <td><span class="player_scissors_span"></span></td>
+        </tr>
+        <tr>
+          <td><span class="villain_name_span"></span></td>
+          <td><span class="villain_paper_span"></span></td>
+          <td><span class="villain_rock_span"></span></td>
+          <td><span class="villain_scissors_span"></span></td>
+        </tr>
+      </table>
+    </span>
+  </div>
+
+  <footer>
+    Brought to you by Lila Selin and the cool kids of Software Engineering - Fall, 2018.
+  </footer>
+  <script src="statsScripts.js"></script>
+</body>
+
+</html>

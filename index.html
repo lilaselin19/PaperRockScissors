@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>P,R,S - Client</title>
+  <title>P,R,S - Index</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="shortcut icon" type="image/png" href="Images/logo.png"/>
   <link href="https://fonts.googleapis.com/css?family=Raleway|Bangers|Tangerine" rel="stylesheet">
@@ -13,56 +13,13 @@
   <h1>P, R, S</h1>
 
   <div id="feedback">
-    <h2>Hi <span class="player_name_span"></span>!</h2>
+    <h2><span id="greeting_span"></span><span class="player_name_span"></span>!</h2>
   	<h3 id="feedback_message" class="good hidden"></h3>
   </div>
 
-  <button id = "show_rules_button">View Rules</button>
+  <a href="rules.html" target="_blank"><button id="show_rules_button">View Rules</button></a>
 
-  <div id="rules" class="hidden">
-    <h2>Rules</h2>
-    <p>The game of P, R, S is based on trust, skill and determination.
-    Each player must:</p>
-    <ul>
-      <li>Choose rock, paper, or scissors</li>
-      <li>Rock beats scissors</li>
-      <li>Scissors beats paper</li>
-      <li>Paper beats rock</li>
-      <li><a href="https://en.wikipedia.org/wiki/Rock%E2%80%93paper%E2%80%93scissors">Learn more</a></li>
-    </ul>
-  </div>
-
-  <button id="show_stats_button">View Stats</button>
-
-  <div id="stats" class="hidden">
-    <span class="center">
-      <h2>Stats</h2>
-      <h5>Total Games: <span class="total_games_span"></span></h5>
-      <h5>Total Wins: <span class="total_wins_span"></span></h5>
-      <h5>Win/Loss ratio: <span class="win_loss_ratio_span"></span></h5>
-      <h3 id = "player_throw_stats">Throw Statistics</h3>
-      <table class="center">
-        <tr>
-          <th>Player</th>
-          <th>Rock</th>
-          <th>Paper</th>
-          <th>Scissors</th>
-        </tr>
-        <tr>
-          <td><span class="player_name_span"></span></td>
-          <td><span class="player_rock_span"></span></td>
-          <td><span class="player_paper_span"></span></td>
-          <td><span class="player_scissors_span"></span></td>
-        </tr>
-        <tr>
-          <td>B(r)owser</td>
-          <td><span class="bowser_rock_span"></span></td>
-          <td><span class="bowser_paper_span"></span></td>
-          <td><span class="bowser_scissors_span"></span></td>
-        </tr>
-      </table>
-    </span>
-  </div>
+  <a href="stats.html" target="_blank"><button id="show_stats_button">View Stats</button></a>
 
   <div id="enter_name" class="hidden">
     <h2>Enter your Name</h2>
@@ -84,22 +41,23 @@
 
   <div id="game_results" class="hidden">
   	<h2 id="game_result_text" class="center"></h2>
-    <button id="play_again_button">Play Again!</button>
     <br>
     <img id="fireworks" src="Images/fireworks.gif" alt="fireworks" class="hidden center">
     <br>
     <img id="player_throw_image" src="Images/playerRock.png" alt="Rock" class="hidden">
     <img id="bowser_throw_image" src="Images/bowserRock.png" alt="Rock" class="hidden">
-    <h5 class="center"><span class="player_name_span"></span> threw <span id="player_choice_span"></span>, and B(r)owser threw <span id="bowser_choice_span"></span>.</h5>
+    <h5 class="center"><span class="player_name_span"></span> threw <span id="player_choice_span"></span>, and B(r)owser threw <span id="villain_choice_span"></span>.</h5>
+    <br>
+    <button id="play_again_button" class="center">Play Again!</button>
   </div>
 
-  <button id="log_out_button" class="visible">Log Out</button>
-  <button id="reset_stats_button" class="hidden">Log Out For Real</button>
+  <button id="log_out_button" class="visible center">Log Out</button>
+  <button id="reset_stats_button" class="hidden center">Log Out For Real</button>
 
   <footer>
     Brought to you by Lila Selin and the cool kids of Software Engineering - Fall, 2018.
   </footer>
-  <script src="scripts.js"></script>
+  <script src="indexScripts.js"></script>
 </body>
 
 </html>
